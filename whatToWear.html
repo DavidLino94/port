@@ -1,0 +1,38 @@
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>What to wear??</title>
+
+<script type="text/javascript">
+
+ function whatShoes() {
+ 
+ var weather = document.getElementById('weather').value;
+    
+ var message;
+if (weather == "hot") {
+        message = "sandals";
+    }
+else if (weather == "rain") {
+        message = "galoshes";
+    }
+else if (weather == "snow") {
+        message = "boots"
+    }
+else {
+        message= "shoes"
+    }
+    
+    document.getElementById('message').innerHTML = message;
+    }
+</script>
+</head>
+
+<body>                      
+Please enter the weather: <input type="text" id="weather">
+<button type="button" onClick="whatShoes()">What to wear??</button>
+<div id="message"></div>              
+</body>         
+</html>
