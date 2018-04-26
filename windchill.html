@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+     <meta charset='utf-8'>
+     <title>My Great Program</title>
+     <script type="text/javascript">
+     
+     function doInputOutput(){
+     var temp = parseFloat(document.getElementById('temp').value);
+     var ws = parseFloat(document.getElementById('ws').value);
+     var wc = windChill(temp,ws);
+     document.getElementById('output').innerHTML = wc
+     }
+     
+     function windChill(tempF, speed){
+     var s = speed;
+     var t = tempF;
+     var f = 35.74 + 0.6215*t - 35.75* Math.pow(s,0.16) + 0.4275* t* Math.pow(s, 0.16);
+     return f; 
+     }
+     </script>
+</head>
+<body>
+     Temperature: <input type='text' id='temp'><br/>
+     Wind Speed: <input type='text' id='ws'><br/>
+     <button type='button' onClick='doInputOutput()'>Wind Chill</button>
+     <div id='output'></div>
+</body>
+</html>
