@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+     <meta charset='utf-8'>
+     <title>My Great Program</title>
+     <script type="text/javascript">
+     function writeNumbers(){
+     var output= "";
+     for (var i = 0 ; i <= 31 ;  i++ ){
+           output += Math.pow(2,i);
+           if(i!=31){
+            output += ", ";
+            }
+            }
+document.getElementById('output').innerHTML = output;
+}
+
+</script>
+</head>
+<body>
+<button type= 'button' onClick='writeNumbers()'>Click here to see the numbers</button>
+     <div id='output'></div>
+</body>
+</html>
+ 
