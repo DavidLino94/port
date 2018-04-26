@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title> Convert Celcius to Farhenheit </title>
+<script type= 'text/JavaScript'>
+        function celsToFahr(){
+        var c = document.getElementById('celsiusInputBox').value;
+        var celcius = parseFloat (c);
+        var f = c*9/5+32 + "F";
+        document.getElementById('fahrenDiv').innerHTML = f ;
+        }
+</script>
+</head>
+<body>
+        Enter a temperature in celcius : <input type='text' id='celsiusInputBox'>
+        <button type='button' onClick='celsToFahr()'>Convert</button>
+        <div id='fahrenDiv'></div>
+</body>
+</html>
