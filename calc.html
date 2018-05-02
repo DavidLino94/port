@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+     <meta charset='utf-8'>
+     <title>Calc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calc.css">
+</head>
+    
+<body>
+    <div class="simpleCalcBody">
+    <div>
+        <input type="text" id="input1">
+        <input type="text" id="input2">
+    </div> 
+    <button type='plusButton' onClick='add()'>+</button>
+    <button type='subButton' onClick='sub()'>-</button> 
+    <button type='divButton' onClick='division()'>/</button>     
+    Result:
+    <span id="result"></span>
+    </div>
+    <script>
+        function add() {
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+            let resultBox = document.getElementById('result');
+            resultBox.innerHTML = parseFloat(num1) + parseFloat(num2);
+        }
+        function sub() {
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+            let resultBox = document.getElementById('result');
+            resultBox.innerHTML = parseFloat(num1) - parseFloat(num2);
+        }
+        function division() {
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+            let resultBox = document.getElementById('result');
+            
+            if (num2 != '0'){
+                resultBox.innerHTML = parseFloat(num1) / parseFloat(num2);
+            } else{
+                resultBox.innerHTML = "Divide by zero"
+                
+            }
+        }        
+    
+    </script>
+    </body>
+
+</html>
