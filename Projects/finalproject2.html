@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="/port/Projects/tictactoe.css">
+  </head>
+  <body onload="startGame();">
+    <h1>TIC-TAC-TOE 😎👍</h1>
+    
+    <div id="message">Let's Play!</div>    
+      
+      <table border="1">
+        <tr>
+          <td class="Square" id="s1" onClick="nextMove(this)"></td>
+          <td class="Square" id="s2" onClick="nextMove(this)"></td>
+          <td class="Square" id="s3" onClick="nextMove(this)"></td>
+        </tr>
+        <tr>
+          <td class="Square" id="s4" onClick="nextMove(this)"></td>
+          <td class="Square" id="s5" onClick="nextMove(this)"></td>
+          <td class="Square" id="s6" onClick="nextMove(this)"></td>
+        </tr>
+        <tr>
+          <td class="Square" id="s7" onClick="nextMove(this)"></td>
+          <td class="Square" id="s8" onClick="nextMove(this)"></td>
+          <td class="Square" id="s9" onClick="nextMove(this)"></td>
+        </tr>
+      </table>
+      <br>
+      <a href="javascript:startGame();" id="restart">Start Game!</a>
+      <br>
+      
+  
+  <script src="/port/Projects/tictactoe.js"></script>
+      
+  </body>
+    <h3>Developed by David Lino</h3>
+</html>
